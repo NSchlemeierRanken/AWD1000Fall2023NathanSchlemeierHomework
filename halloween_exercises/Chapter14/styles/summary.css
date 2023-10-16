@@ -1,0 +1,239 @@
+html{
+    background-image: url(../images/bats.gif);
+    z-index: 0;
+}
+/* Global Setting */
+body {
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 960px;
+    width: 95%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 0;
+    border: 3px solid black;
+    box-shadow: 0 9px 18px 9px;
+}
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: -webkit-linear-gradient(45deg, white 0, orange 75%, black 100%);
+    background-image: -moz-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    background-image: -o-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    padding: 0.9375em 1.875%;
+    border-bottom: 2px solid black;
+}
+header img{
+    float: left;
+    padding-right: 1.875%;
+}
+header h2 {
+    font-size: 230%;
+}
+a {
+    font-weight: bold;
+}
+header h3{
+    font-size: 125%;
+    padding-bottom: 1rem;
+}
+/* Navigation menu */
+#nav_menu {
+    clear:left;
+}
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+}
+#nav_menu ul li {
+    float: left;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+    float: none;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear:both;
+    display: block;
+}
+#nav_menu ul {
+    margin: 0;
+    padding: 0;
+}
+#nav_menu ul li:hover ul {
+    width: 100%;
+}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: .7em 0;
+    width: 160px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+#nav_menu ul li a:current {
+    color:orange;
+}
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
+    background-color: grey;
+}
+/* Aside Code */
+aside {
+    float: left;
+    width: 160px;
+    padding: 1.25em 0;
+}
+aside ul {
+    list-style: none;
+    padding-left: 1.5em;
+    margin-top: 0;
+}
+#nav_list ul li{
+    width: 110px;
+    margin-bottom: .5em;
+    border: 2px solid black;
+}
+#nav_list ul li a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: orange;
+    padding: .5em 0 .5em .5em;
+    color:black
+}
+/* Section Code */
+section {
+    width: 580px;
+    float: right;
+    padding: 1.25rem 2.5rem 1.25rem 1.25rem;
+}
+section a {
+    color: #000;
+}
+section a {
+    font-weight: bold;
+    color: orange;
+}
+section a:link, main a:visited {
+    color: #000;
+}
+section a:hover, main a:focus {
+    color: green;
+}
+/* Table */
+caption {
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 0 0 .5em 0;
+}
+th, td {
+    padding: .2em .3em .2em 0;
+}
+th.right, td.right {
+    text-align: right;
+    padding: 5px;
+}
+th.left, td.left {
+    text-align: left;
+}
+th {
+    vertical-align: top;
+}
+td a {
+    color: #000;
+}
+thead {
+    font-weight: bold;
+    color: #808080;
+}
+tbody td:nth-of-type(even) {
+    background: #F5DeB3;
+}
+/* Footer code */
+footer {
+    clear: both;
+    border-top: 2px solid black;
+    padding: 0.9375em 1.875%;
+    background-image: -webkit-linear-gradient(45deg, black 0, orange 75%, white 100%);
+    background-image: -moz-linear-gradient(45deg, black 0%, orange 75%, white 100%);
+    background-image: -o-linear-gradient(45deg, black 0%, orange 75%, white 100%);
+    background-image: linear-gradient(45deg, black 0%, orange 75%, white 100%);
+}
+footer p {
+    font-size: 90%;
+    text-align: center;
+}
+#mobile_menu {
+    display: none;
+}
+/* Media Queries */
+@media only screen and (max-width: 800px)
+{
+    html{
+        background-image: none;
+    }
+    body{
+        font-size: 90%;
+        box-shadow: none;
+    }
+}
+@media only screen and (max-width: 767px)
+{
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu{
+        display: block;
+    }
+    header h2 {
+        font-size: 200%;
+    }
+    section {
+        width: 90%;
+        float: none;
+        padding-left: 5%;
+        padding-bottom: .5em;
+    }
+    aside {
+        width: 90%;
+        float: none;
+        padding: 0 5% 1em 5%;
+    }
+    #nav_list ul {
+        width: 50%;
+        padding-left: 25%;
+        text-align: center;
+    }
+    #nav_list ul li a {
+        padding-left: 0;
+    }
+}
+@media only screen and (max-width: 479px)
+{
+    header h2 {
+        font-size: 180%;
+    }
+    header h3 {
+        font-size: 115%;
+    }
+    section h1 {
+        font-size: 130%;
+    }
+    section h1:first-letter {
+        font-size:180%;
+    }
+}
