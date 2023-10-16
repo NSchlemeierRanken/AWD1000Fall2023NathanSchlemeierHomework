@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Halloween Store</title>
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/product.css">
+	<link rel="stylesheet" href="../styles/slicknav.css">
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<img src="../images/pumpkin.gif" alt="Pumpkin Picture"
+		width="85" usemap="#pumpkin"/>
+		<map name="pumpkin">
+			<area href="../index.html" alt="pumpkin" title="pumpkin" shape="circle" coords="39, 40, 40">
+		</map>
+		<h2>The Halloween Store</h2>
+		<h3>For the little Goblin in all of us!</h3>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="../index.html" class ="current">Home</a></li>
+			<li><a href="../products/index.html">Product List</a></li>
+			<li><a href="../personal/index.html">Personal</a></li>
+			<li><a href="../decorations/index.html">Decorating Ideas</a>
+			 <ul>
+				<li><a href="../decorations/outdoor.html">Outdoor</a></li>
+				<li><a href="../decorations/indoor.html">Indoor</a></li>
+				<li><a href="../decorations/table.html">Table</a></li>
+				<li><a href="../decorations/treats.html">Treats</a></li>
+			 </ul>
+			 </li>
+			<li><a href="../email.html">Join Email</a></li>
+		</ul>
+	</nav>
+	<main>
+		<aside id="sidebarA">
+			<nav id="nav_list">
+				<ul>
+					<li><a href="props.html">Props</a></li>
+					<li><a href="costumes.html">Costumes</a></li>
+					<li><a href="special.html">Special FX</a></li>
+					<li><a href="masks.html">Masks</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<section>
+			<h1>20" Deranged cat</h1>
+			<img src="../images/cat1.jpg" alt="Deranged Cat" height="150">
+			<p>This cat provides its own light and is perfect for a backyard haunting.</p>
+			<p><strong>Price:</strong>19.99</p>
+
+		</section>
+		<aside id="sidebarB">
+			<h2>Customers who bought this product also bought:</h2>
+			<ul>
+				<li>
+					<figure>
+						<a href="bats.html">
+							<img src="../images/flying_bats.jpg" alt="Flying Bats" width="50">
+							<figcaption><a href="bats.html">Flying Bats</a></figcaption>
+						</a>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<a href="rat.html">
+							<img src="../images/rat1.jpg" alt="16 Ugly Rat" width="50">
+							<figcaption><a href="rat1.html">16" Ugly Rat</a></figcaption>
+						</a>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<a href="strobe1.html">
+							<img src="../images/strobe1.jpg" alt="Mini Strobe" width="50">
+							<figcaption><a href="strobe1.html">Mini Strobe Light</a></figcaption>
+						</a>
+					</figure>
+				</li>
+			</ul>
+		</aside>
+	</main>
+	<footer>
+		<p>&copy; 2023 Nathan Schlemeier</p>
+	</footer>
+</body>
+</html>
